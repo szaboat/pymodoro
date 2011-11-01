@@ -6,6 +6,7 @@ import commands
 class App():
     def __init__(self):
         self.root = Tkinter.Tk()
+        self.root.title("Pomodoro timer")
         self.label = Tkinter.Label(font=("Helvetica Neue", 44), width=10)
         self.label.pack(ipadx=10, ipady=10, )
         self.reset_time()
