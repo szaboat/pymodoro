@@ -50,10 +50,10 @@ class PomodoroTimer():
 
             if not self.break_passed:
                 text = "Break"
-                self.label.bind("<Button-1>", self.start_break)
+                self.label.bind("<Double-Button-1>", self.start_break)
             else:
                 text = "Pomodoro"
-                self.label.bind("<Button-1>", self.start_pomodoro)
+                self.label.bind("<Double-Button-1>", self.start_pomodoro)
 
         self.label.configure(text=text)
         self.root.after(1000, self.update_timer)
